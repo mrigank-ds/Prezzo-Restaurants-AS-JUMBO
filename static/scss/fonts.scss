@@ -8,6 +8,69 @@
 //   font-style: normal;
 // }
 
+@font-face {
+    font-family: 'Jubilat Extra';
+    src: url('../assets/fonts/JubilatExtraLight-Roman.woff2') format('woff2'),
+        url('../assets/fonts/JubilatExtraLight-Roman.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jubilat';
+    src: url('../assets/fonts/JubilatMedium-Roman.woff2') format('woff2'),
+        url('../assets/fonts/JubilatMedium-Roman.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jubilat';
+    src: url('../assets/fonts/JubilatBold-Roman.woff2') format('woff2'),
+        url('../assets/fonts/JubilatBold-Roman.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jubilat';
+    src: url('../assets/fonts/JubilatBlack-Roman.woff2') format('woff2'),
+        url('../assets/fonts/JubilatBlack-Roman.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jubilat';
+    src: url('../assets/fonts/JubilatLight-Roman.woff2') format('woff2'),
+        url('../assets/fonts/JubilatLight-Roman.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jubilat';
+    src: url('../assets/fonts/JubilatSemibold-Roman.woff2') format('woff2'),
+        url('../assets/fonts/JubilatSemibold-Roman.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jubilat';
+    src: url('../assets/fonts/JubilatRegular-Roman.woff2') format('woff2'),
+        url('../assets/fonts/JubilatRegular-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 $font-weight-bold: 700;
 $font-weight-semibold: 600;
 $font-weight-medium: 500;
@@ -39,7 +102,7 @@ $font-weight-light: 300;
 
   --yxt-autocomplete-text-font-size: var(--yxt-font-size-md-lg);
 
-  --yxt-font-family: "Source Sans Pro","Open Sans",system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --yxt-font-family: "Jubilat","Open Sans",system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 @font-face

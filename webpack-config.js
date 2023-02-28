@@ -107,7 +107,8 @@ module.exports = function () {
       'overlay': `./${jamboConfig.dirs.output}/static/js/overlay/parent-frame/yxtanswersoverlay.js`,
       'iframe-prod': `./${jamboConfig.dirs.output}/static/js/iframe-prod.js`,
       'iframe-staging': `./${jamboConfig.dirs.output}/static/js/iframe-staging.js`,
-      'VerticalFullPageMap': `./${jamboConfig.dirs.output}/static/js/VerticalFullPageMap.js`
+      'VerticalFullPageMap': `./${jamboConfig.dirs.output}/static/js/VerticalFullPageMap.js`,
+      'robots': `./${jamboConfig.dirs.output}/static/robots/robots.txt`      
     },
     resolve: {
       alias: {
@@ -149,7 +150,18 @@ module.exports = function () {
           generator: {
             filename: '[name][ext]'
           }
-        }
+        },
+        {
+        test: /\.txt$/,
+        use: [         
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].txt'
+            },
+          }
+        ],
+      },
       ],
     },
   };

@@ -4,14 +4,15 @@
     "config": "config",
     "output": "desktop",
     "pages": "pages",
-    "translations": "translations",
     "partials": [
       "cards",
       "partials",
       "layouts/header.hbs",
       "layouts/footer.hbs",
-      "layouts/headincludes.hbs"
+      "layouts/headincludes.hbs",
+      "directanswercards"
     ],
+    "translations": "translations",
     "preservedFiles": []
   },
   "defaultTheme": "answers-hitchhiker-theme"
